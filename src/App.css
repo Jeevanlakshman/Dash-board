@@ -1,38 +1,104 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+ 
+  padding: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  background-color:lemonchiffon;
+  font-weight: bold;
+  color: black;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-styles{
+  padding: 10px;
+  width: 100%;
+  align-content: center;
+  background-color: yellow;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-button{
+  border: 1px solid black;
+  padding: 10px; 
+  border-radius: 5px;
+  background-color: inherit;
+  
+}
+ .nav-button:hover{
+  background-color:rgb(226, 11, 11);
+  border: none;
+ }
+
+
+footer{
+ font-size: large;
+ font-weight: bolder;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(255, 44, 2);
+  
+
+
+}
+.dot{
+ 
+  font-size: medium;
+  font-weight: 800;
+  justify-content: flex-end;
+
+}
+.user-content{
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  background-color:lavenderblush;
+
+
+  
+
+}
+.user-card{
+  background-color: black;
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  color: white;
+ 
+  
+}
+.btn{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-btn:hover{
+  background-color: green;
+}
+
+.del-btn:hover{
+  background-color: orangered;
+}
+.view-btn:hover{
+  background-color: aqua;
+}
+
+.children{
+  height: 100vh;
+  margin: 1vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-between;
+  
 }

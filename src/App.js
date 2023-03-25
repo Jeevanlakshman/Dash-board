@@ -25,6 +25,11 @@ function App() {
     <AddUser
      user={user}
      setUser={setUser}/>
+      </Route>
+     <Route path="/add/Teacher/user">
+    <AddUser
+     user={user}
+     setUser={setUser}/>
     
     </Route>
 

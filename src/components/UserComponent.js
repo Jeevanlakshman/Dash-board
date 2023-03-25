@@ -27,6 +27,7 @@ export default function UserComponent({user, setUser}) {
                 <h1>{person.name}</h1>
                 <p>Batch : {person.batch}</p>
                 <p>Email : {person.email}</p>
+                <p>category:{person.category}</p>
                 <p>Exp   : {person.exeprience}</p>
                
 

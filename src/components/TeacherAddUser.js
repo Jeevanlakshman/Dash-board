@@ -12,7 +12,7 @@ export default function AddUser({user, setUser}){
    const[batch, setBatch] = useState("");
    const[category, setCategory] = useState("");
 
-   const addNewUser =()=>{
+   const addTeacherNewUser =()=>{
     const newUser = {
         id,
         name,
@@ -40,7 +40,7 @@ export default function AddUser({user, setUser}){
 
     return(
     <BaseApp
-    title={"Add A New User"}
+    title={addTeacherNewUser}
     >
 
 <div>
@@ -77,6 +77,7 @@ export default function AddUser({user, setUser}){
 
 
 
+
            <input placeholder="batch"
            value={batch}
            onChange={(event)=>setBatch(event.target.value)}
@@ -85,7 +86,7 @@ export default function AddUser({user, setUser}){
 
 
            <button
-           onClick={addNewUser}>Add</button>
+           onClick={addTeacherNewUser}>Add</button>
         
        
        

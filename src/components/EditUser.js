@@ -8,6 +8,7 @@ const EditUser =({user,setUser}) => {
     const[email, setEmail] = useState("");
     const[exeprience, setExeprience]=useState("");
     const[batch, setBatch] = useState("");
+    const[category, setCategory] = useState("");
 
     const {id}= useParams();
     const history = useHistory()
@@ -18,6 +19,7 @@ const EditUser =({user,setUser}) => {
         setName(selectedUser.name)
         setEmail(selectedUser.email)
         setExeprience(selectedUser.exeprience)
+        setCategory(selectedUser.category)
         setBatch(selectedUser.batch)
     },[]);
         
@@ -28,6 +30,7 @@ const EditUser =({user,setUser}) => {
             name,
             email,
             exeprience,
+            category,
             batch
         }
         user[editIndex] = editedData;
@@ -67,6 +70,10 @@ const EditUser =({user,setUser}) => {
                value={exeprience}
                onChange={(event)=>setExeprience(event.target.value)}
                />
+               <input placeholder="category"
+               value={category}
+                onChange={(event)=>setCategory(event.target.value)}
+                 />
     
     
     
